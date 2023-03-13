@@ -22,7 +22,7 @@ class Proxy:
         self.http_sources = http_sources
         self.socks4_sources = socks4_sources
         self.socks5_sources = socks5_sources
-        self.proxies, self.stats = [], 'Nothing'
+        self.proxies = []
 
 
     def scrap(self, sources, proxy_type):
@@ -38,7 +38,7 @@ class Proxy:
 
 
     def init(self):
-        threads, self.stats = [], 'Scraping'
+        threads = []
         self.proxies.clear()
         for i in (
         (self.http_sources, 'http'), 
@@ -47,21 +47,6 @@ class Proxy:
             thread = Thread(target=self.scrap, args=(*i, ))
             threads.append(thread)
             thread.start()
-        self.stats = 'Sending'
         for t in threads:  t.join()
-
-
-    def set_timer(self, seconds):
-        def timer():
-            while True: 
-                self.init()
-                self.stats = 'Waiting'
-                swait(seconds)
-                self.stats = 'Scraping'
-        Thread(target=timer).start()
-
-
-    def __str__(self) -> str: return f'[ Proxies ]: {len(self.proxies)}'
-    def __len__(self): return len(self.proxies)
         
     
