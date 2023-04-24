@@ -1,13 +1,9 @@
 import requests
 from threading import Thread
-from time import sleep as swait
 from utilitys import logger
 from re import compile
 
 
-
-TIME_OUT = 15
-USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'
 REGEX = compile(r"(?:^|\D)?(("+ r"(?:[1-9]|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])"
                 + r"\." + r"(?:\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])"
                 + r"\." + r"(?:\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])"
@@ -28,9 +24,9 @@ class Proxy:
     def scrap(self, sources, proxy_type):
         for source_url in [s for s in sources if s]:
             try: response = requests.get(
-                source_url, 
-                timeout=TIME_OUT, 
-                headers={'user-agent': USER_AGENT})
+                source_url, timeout=15, 
+                headers={'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'}
+            )
             except Exception as e: logger(e)
             if tuple(REGEX.finditer(response.text)):
                 for proxy in tuple(REGEX.finditer(response.text)):
