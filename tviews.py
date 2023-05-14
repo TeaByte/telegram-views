@@ -22,7 +22,9 @@ REGEX = compile(
 
 class Telegram:
     def __init__(self, channel: str, post: int) -> None:
-        self.tasks = 500
+        # Async Tasks ( Don't do alot might get rate limit )
+        self.tasks = 225 
+        
         self.channel = channel
         self.post = post
         
