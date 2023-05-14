@@ -22,7 +22,7 @@ REGEX = compile(
 
 class Telegram:
     def __init__(self, channel: str, post: int) -> None:
-        # Async Tasks ( Don't do alot might get rate limit )
+        # Async Tasks
         self.tasks = 225 
         
         self.channel = channel
@@ -31,7 +31,6 @@ class Telegram:
         self.cookie_error = 0
         self.sucsess_sent = 0
         self.failled_sent = 0
-        self.unkown_error = 0
         self.token_error  = 0
         self.proxy_error  = 0
 
@@ -77,9 +76,7 @@ class Telegram:
         async def inner(proxies: list):
             await asyncio.wait(
                 [asyncio.create_task(self.request(proxy, proxy_type)) 
-                for proxy in proxies]
-            )
-        
+                for proxy in proxies])
         chunks = [lines[i:i+self.tasks] for i in range(0, len(lines), self.tasks)]
         for chunk in chunks: asyncio.run(inner(chunk))
     
@@ -89,9 +86,7 @@ class Telegram:
             async def inner(proxies: tuple):
                 await asyncio.wait(
                     [asyncio.create_task(self.request(proxy, proxy_type)) 
-                    for proxy_type, proxy in proxies]
-                )
-            
+                    for proxy_type, proxy in proxies])
             auto = Auto()
             chunks = [auto.proxies[i:i+self.tasks] for i in range(0, len(auto.proxies), self.tasks)]
             for chunk in chunks: asyncio.run(inner(chunk))
@@ -101,8 +96,7 @@ class Telegram:
         while True: 
             await asyncio.wait(
                 [asyncio.create_task(self.request(proxy, proxy_type)) 
-                for _ in range(self.tasks)]
-            )
+                for _ in range(self.tasks)])
 
 
     def cli(self):
@@ -128,7 +122,6 @@ class Telegram:
         Proxy Error:  {self.proxy_error}
         Token Error:  {self.token_error}
         Cookie Error: {self.cookie_error}
-        Unkown Error: {self.unkown_error}
             ''')
             sleep(0.3);system('cls' if name=='nt' else 'clear')
 
