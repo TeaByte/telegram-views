@@ -1,7 +1,7 @@
-http://proxysearcher.sourceforge.net/Proxy%20List.php?type=socks
-https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks4
 https://openproxy.space/list/socks4
 https://openproxylist.xyz/socks4.txt
+https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks4
+http://proxysearcher.sourceforge.net/Proxy%20List.php?type=socks
 https://proxyspace.pro/socks4.txt
 https://spys.me/socks.txt
 https://www.proxy-list.download/api/v1/get?type=socks4
