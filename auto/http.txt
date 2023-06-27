@@ -1,12 +1,12 @@
-http://proxysearcher.sourceforge.net/Proxy%20List.php?type=http
+https://openproxylist.xyz/http.txt
 https://api.proxyscrape.com/v2/?request=getproxies&protocol=http
 https://openproxy.space/list/http
-https://openproxylist.xyz/http.txt
 https://proxyspace.pro/http.txt
 https://proxyspace.pro/https.txt
 https://rootjazz.com/proxies/proxies.txt
 https://sheesh.rip/http.txt
 https://spys.me/proxy.txt
+http://proxysearcher.sourceforge.net/Proxy%20List.php?type=http
 https://proxyhub.me/en/all-http-proxy-list.html
 https://proxyhub.me/en/all-https-proxy-list.html
 https://proxy-tools.com/proxy/http
