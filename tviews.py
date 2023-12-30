@@ -8,9 +8,7 @@ from threading import Thread
 from time import sleep
 
 
-user_agent = "Opera/9.54 (X11; Linux i686; en-US) Presto/2.10.331 Version/12.00",
-    "Opera/9.18 (Windows 95; sl-SI) Presto/2.11.255 Version/12.00",
-    "Mozilla/5.0 (Windows NT 4.0) AppleWebKit/531.2 (KHTML, like Gecko) Chrome/88.0.4172.40 Safari/531.2 Edg/88.01016.83",
+user_agent = "Mozilla/5.0 (Windows NT 4.0) AppleWebKit/531.2 (KHTML, like Gecko) Chrome/88.0.4172.40 Safari/531.2 Edg/88.01016.83",
     "Mozilla/5.0 (Windows; U; Windows NT 6.0) AppleWebKit/533.35.1 (KHTML, like Gecko) Version/5.0 Safari/533.35.1",
     "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_1 rv:3.0) Gecko/20191206 Firefox/35.0",
     "Opera/8.57 (X11; Linux i686; nl-NL) Presto/2.12.346 Version/10.00",
