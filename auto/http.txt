@@ -1,3 +1,4 @@
+https://raw.githubusercontent.com/vakhov/fresh-proxy-list/master/http.txt
 https://raw.githubusercontent.com/zloi-user/hideip.me/main/http.txt
 https://openproxylist.xyz/http.txt
 https://api.proxyscrape.com/v2/?request=getproxies&protocol=http
