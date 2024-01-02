@@ -1,3 +1,4 @@
+https://raw.githubusercontent.com/TuanMinPay/live-proxy/master/http.txt
 https://raw.githubusercontent.com/proxifly/free-proxy-list/main/proxies/protocols/http/data.txt
 https://raw.githubusercontent.com/zloi-user/hideip.me/main/http.txt
 https://openproxylist.xyz/http.txt
