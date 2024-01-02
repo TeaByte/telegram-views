@@ -1,3 +1,4 @@
+https://raw.githubusercontent.com/vakhov/fresh-proxy-list/master/socks4.txt
 https://openproxy.space/list/socks4
 https://openproxylist.xyz/socks4.txt
 https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks4
