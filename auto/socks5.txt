@@ -1,3 +1,4 @@
+https://raw.githubusercontent.com/TuanMinPay/live-proxy/master/socks5.txt
 https://raw.githubusercontent.com/proxifly/free-proxy-list/main/proxies/protocols/socks5/data.txt
 https://openproxy.space/list/socks5
 https://openproxylist.xyz/socks5.txt
