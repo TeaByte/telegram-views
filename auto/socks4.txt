@@ -1,3 +1,4 @@
+https://raw.githubusercontent.com/cybercrafttool/proxylist/results/all/socks4.proxy.txt
 https://raw.githubusercontent.com/proxifly/free-proxy-list/main/proxies/protocols/socks4/data.txt
 https://openproxy.space/list/socks4
 https://openproxylist.xyz/socks4.txt
