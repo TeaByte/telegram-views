@@ -136,7 +136,7 @@ class Auto:
             with open(f'auto/socks4.txt', 'r') as file:
                 self.socks4_sources = file.read().splitlines()
                 
-            with open(f'auto/http.txt', 'r') as file:
+            with open(f'auto/socks5.txt', 'r') as file:
                 self.socks5_sources = file.read().splitlines()
                 
         except FileNotFoundError: 
