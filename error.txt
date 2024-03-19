@@ -1,0 +1,6 @@
+https://raw.githubusercontent.com/zloi-user/hideip.me/main/http.txt -> 'utf-8' codec can't decode byte 0xfc in position 14428: invalid start byte
+https://raw.githubusercontent.com/zloi-user/hideip.me/main/http.txt -> 'utf-8' codec can't decode byte 0xfc in position 14428: invalid start byte
+https://www.proxyscan.io/download?type=http -> Cannot connect to host www.proxyscan.io:443 ssl:default [Connect call failed ('72.52.178.23', 443)]
+https://raw.githubusercontent.com/zloi-user/hideip.me/main/socks4.txt -> 'utf-8' codec can't decode byte 0xfc in position 6530: invalid start byte
+https://www.proxyscan.io/download?type=socks4 -> Cannot connect to host www.proxyscan.io:443 ssl:default [Connect call failed ('72.52.178.23', 443)]
+https://www.proxyscan.io/download?type=socks5 -> Cannot connect to host www.proxyscan.io:443 ssl:default [Connect call failed ('72.52.178.23', 443)]
